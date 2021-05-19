@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1500,2651</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1422,989</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>AcmeLoginPickBranch_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="31">
@@ -79,7 +79,7 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="AcmeLoginPickBranch" sap:VirtualizedContainerService.HintSize="1510,2586" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AcmeLoginPickBranch" sap:VirtualizedContainerService.HintSize="968,924" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="isLoginPageLoaded" />
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
@@ -90,19 +90,19 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="1468,2494" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="[in_acmeLoginURL]">
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="926,832" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="[in_acmeLoginURL]">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1434,2393" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="892,731" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign DisplayName="Initilialized isLoginPageLoaded" sap:VirtualizedContainerService.HintSize="1392,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign DisplayName="Initilialized isLoginPageLoaded" sap:VirtualizedContainerService.HintSize="850,60" sap2010:WorkflowViewState.IdRef="Assign_1">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Boolean">[isLoginPageLoaded]</OutArgument>
               </Assign.To>
@@ -110,25 +110,17 @@
                 <InArgument x:TypeArguments="x:Boolean">False</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign DisplayName="Initilialized LoginStatus" sap:VirtualizedContainerService.HintSize="1392,60" sap2010:WorkflowViewState.IdRef="Assign_2">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:Boolean">[out_status]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:Boolean">False</InArgument>
-              </Assign.Value>
-            </Assign>
-            <Pick sap:VirtualizedContainerService.HintSize="1392,1321" sap2010:WorkflowViewState.IdRef="Pick_1">
+            <Pick sap:VirtualizedContainerService.HintSize="850,169" sap2010:WorkflowViewState.IdRef="Pick_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <PickBranch sap2010:Annotation.AnnotationText="The trigger for this branch will be the &quot;Login&quot; text on the login page.  If this exists then Acme loaded successfully" DisplayName="PickBranch: Acme loaded" sap:VirtualizedContainerService.HintSize="502,1275" sap2010:WorkflowViewState.IdRef="PickBranch_1">
+              <PickBranch sap2010:Annotation.AnnotationText="The trigger for this branch will be the &quot;Login&quot; text on the login page.  If this exists then Acme loaded successfully" DisplayName="PickBranch: Acme loaded" sap:VirtualizedContainerService.HintSize="200,123" sap2010:WorkflowViewState.IdRef="PickBranch_1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                   </scg:Dictionary>
@@ -230,13 +222,13 @@
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:BrowserScope>
               </PickBranch>
-              <PickBranch sap2010:Annotation.AnnotationText="The trigger for this branch is the login username in the event of an SSO" DisplayName="PickBranch: Confirm User" sap:VirtualizedContainerService.HintSize="426,1275" sap2010:WorkflowViewState.IdRef="PickBranch_3">
+              <PickBranch sap2010:Annotation.AnnotationText="The trigger for this branch is the login username in the event of an SSO" DisplayName="PickBranch: Confirm User" sap:VirtualizedContainerService.HintSize="200,123" sap2010:WorkflowViewState.IdRef="PickBranch_3">
                 <PickBranch.Variables>
                   <Variable x:TypeArguments="x:String" Name="userEmail" />
                 </PickBranch.Variables>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                   </scg:Dictionary>
@@ -269,11 +261,11 @@
                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_18" Message="[&quot;Login Successful&quot;]" />
                 </Sequence>
               </PickBranch>
-              <PickBranch sap2010:Annotation.AnnotationText="in case of adverse scenario--meaning in the event that neither trigger occurs, this trigger should execute. " sap:VirtualizedContainerService.HintSize="250,1275" sap2010:WorkflowViewState.IdRef="PickBranch_4">
+              <PickBranch sap2010:Annotation.AnnotationText="in case of adverse scenario--meaning in the event that neither trigger occurs, this trigger should execute. " sap:VirtualizedContainerService.HintSize="200,123" sap2010:WorkflowViewState.IdRef="PickBranch_4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -289,7 +281,7 @@
                 <Throw DisplayName="Throw LoginTimeout" Exception="[new SystemException(&quot;Login Page Failed to Load&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_1" />
               </PickBranch>
             </Pick>
-            <If Condition="[isLoginPageLoaded]" DisplayName="If Login was Performed" sap:VirtualizedContainerService.HintSize="1392,740" sap2010:WorkflowViewState.IdRef="If_4">
+            <If Condition="[isLoginPageLoaded]" DisplayName="If Login was Performed" sap:VirtualizedContainerService.HintSize="850,330" sap2010:WorkflowViewState.IdRef="If_4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -297,11 +289,11 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Pick sap:VirtualizedContainerService.HintSize="1274,564" sap2010:WorkflowViewState.IdRef="Pick_2">
-                  <PickBranch sap2010:Annotation.AnnotationText="The trigger for this branch is the invalid credentials message" DisplayName="PickBranch: Invalid Credentials" sap:VirtualizedContainerService.HintSize="384,518" sap2010:WorkflowViewState.IdRef="PickBranch_2">
+                <Pick sap:VirtualizedContainerService.HintSize="814,154" sap2010:WorkflowViewState.IdRef="Pick_2">
+                  <PickBranch sap2010:Annotation.AnnotationText="The trigger for this branch is the invalid credentials message" DisplayName="PickBranch: Invalid Credentials" sap:VirtualizedContainerService.HintSize="200,108" sap2010:WorkflowViewState.IdRef="PickBranch_2">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                       </scg:Dictionary>
@@ -334,13 +326,13 @@
                       <Throw DisplayName="Throw InvalidCredentials" Exception="[new SystemException(&quot;The credentials are invalid&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_4" />
                     </Sequence>
                   </PickBranch>
-                  <PickBranch sap2010:Annotation.AnnotationText="The trigger for this branch is the login username" DisplayName="PickBranch: Confirm User" sap:VirtualizedContainerService.HintSize="426,518" sap2010:WorkflowViewState.IdRef="PickBranch_7">
+                  <PickBranch sap2010:Annotation.AnnotationText="The trigger for this branch is the login username" DisplayName="PickBranch: Confirm User" sap:VirtualizedContainerService.HintSize="200,108" sap2010:WorkflowViewState.IdRef="PickBranch_7">
                     <PickBranch.Variables>
                       <Variable x:TypeArguments="x:String" Name="userEmail" />
                     </PickBranch.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                       </scg:Dictionary>
@@ -368,11 +360,11 @@
                       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_19" Message="[&quot;Login Successful&quot;]" />
                     </Sequence>
                   </PickBranch>
-                  <PickBranch sap2010:Annotation.AnnotationText="in case of adverse scenario this trigger should execute.  " sap:VirtualizedContainerService.HintSize="250,518" sap2010:WorkflowViewState.IdRef="PickBranch_6">
+                  <PickBranch sap2010:Annotation.AnnotationText="in case of adverse scenario this trigger should execute.  " sap:VirtualizedContainerService.HintSize="200,108" sap2010:WorkflowViewState.IdRef="PickBranch_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
